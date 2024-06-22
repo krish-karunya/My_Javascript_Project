@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(27, 25, 25);
+}
+.container {
+  background-color: white;
+  width: 400px;
+  padding: 25px 35px;
+  margin: 200px auto;
+  border-radius: 10px;
+}
+p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+#qrText {
+  padding: 20px;
+  border: 1px solid rgb(87, 72, 72);
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  outline: 0;
+  font-size: medium;
+}
+
+#btn {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(54, 54, 143);
+  font-weight: bold;
+}
+#imgBox {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#imgBox img {
+  width: 100%;
+  padding: 10px;
+}
+#imgBox.show-img {
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid rgb(52, 45, 45);
+  margin-bottom: 40px;
+}
+.error {
+  animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX (2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

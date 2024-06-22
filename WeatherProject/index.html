@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="searchinput" placeholder="Enter city name" />
+        <button class="btn">
+          <img src="Images/search.png" alt="search-icon" class="search-icon" />
+        </button>
+      </div>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weathers">
+        <div class="weather-info">
+          <img src="Images/rain.png" alt="Weather-icon" class="Weather-icon" />
+          <h1 class="deg">10°c</h1>
+          <h2 class="city">Bangalore</h2>
+        </div>
+        <div class="details">
+          <div class="reports">
+            <div><img src="Images/humidity.png" alt="mist" class="mist" /></div>
+
+            <div class="info">
+              <h1 class="humidity">64%</h1>
+              <p>humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <div><img src="Images/wind.png" alt="wind" class="wind" /></div>
+            <div>
+              <h1 class="windspeed">8.2 km/h</h1>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

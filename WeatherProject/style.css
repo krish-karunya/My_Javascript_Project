@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+}
+.card {
+  width: 100%;
+  max-width: 450px;
+  background: linear-gradient(135deg, rgb(16, 158, 205), rgb(90, 142, 26));
+  margin: 100px auto 0;
+  border-radius: 20px;
+  color: #fff;
+  border: 1px solid wheat;
+  padding-bottom: 30px;
+}
+.search {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.searchinput {
+  margin: 10px;
+  width: 60%;
+  border: 0;
+  outline: 0;
+  border-radius: 40px;
+  padding: 20px;
+  font-size: medium;
+}
+.btn {
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.search-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.weather-info {
+  text-align: center;
+}
+.weather-info img {
+  width: 100px;
+}
+.weather-info h1 {
+  font-weight: 500;
+  font-size: 80px;
+}
+.weather-info h2 {
+  font-weight: 500;
+  font-size: 45px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin-top: 70px;
+  padding-bottom: 50px;
+}
+.details img {
+  width: 50px;
+}
+.reports {
+  display: flex;
+}
+.mist {
+  margin-right: 10px;
+}
+.info {
+  margin-top: -10px;
+}
+.wind {
+  margin-right: 10px;
+}
+.weathers {
+  display: none;
+}
+.error {
+  text-align: left;
+  margin-left: 70px;
+  font-size: 20px;
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(218, 226, 218);
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    margin-right: 300px;
+    margin-left: 12px;
+    padding-bottom: 25px;
+  }
+  .search {
+    width: 200px;
+    margin-left: 20px;
+    display: flex;
+  }
+  .searchinput {
+    height: 20px;
+    width: 200px;
+    flex-basis: 60%;
+    margin-left: 55px;
+  }
+
+  .btn {
+    height: 40px;
+    flex-basis: 40%;
+    padding: 10px;
+  }
+  .search-icon {
+    width: 105x;
+  }
+  .weathers {
+    margin-left: -280px;
+  }
+  .weather-info img {
+    width: 100px;
+    margin-top: 100px;
+  }
+  .weather-info h1 {
+    font-weight: 500;
+    font-size: 50px;
+  }
+  .weather-info h2 {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .details img {
+    width: 30px;
+  }
+  .windspeed {
+    font-size: medium;
+  }
+  .humidity {
+    font-size: medium;
+  }
+  .reports {
+    margin-left: 40px;
+  }
+  .wind {
+    margin-left: 10px;
+    display: flex;
+  }
+}
